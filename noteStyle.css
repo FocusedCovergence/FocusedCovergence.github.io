@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar_container{
+    display: flex;
+    width: 20%;
+}
+
+#sidebar{
+    width: 90%;
+    background-color: grey;
+    border-right: 1px solid white;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar .year{
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+}
+
+#sidebar .courseList{
+    display: none;
+    padding-left: 20px;
+}
+
+#sidebar .courseList li{
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+#sidebar .courseList li:hover{
+    text-decoration: underline;
+}
+
+.content{
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
